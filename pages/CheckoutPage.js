@@ -9,7 +9,6 @@ class CheckoutPage {
         this.continueButton = page.getByRole('button', { name: 'Continue' });
         this.paymentMethodsButton = page.locator('#button-payment-methods');
         this.submitOrderButton = page.getByRole('button', { name: 'Confirm Order' });
-
     }
 
     async openLogin() {

@@ -17,7 +17,6 @@ class LaptopsAndNotebooksPage {
 
     async addToWishList(index) {
         await this.page.mouse.wheel(0, 500);  
-        // await this.foo.waitFor({ state: 'visible' }); 
         await this.wishlist.nth(index).isVisible;
         await this.wishlist.nth(index).click();
     }
