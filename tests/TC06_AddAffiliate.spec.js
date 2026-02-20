@@ -1,4 +1,4 @@
-const {test, expect} = require('@playwright/test');
+const {test} = require('@playwright/test');
 const { HomePage } = require('../pages/HomePage');
 const { LoginPage } = require('../pages/LoginPage');
 const { AccountPage } = require('../pages/AccountPage')
@@ -15,7 +15,7 @@ const { AffiliateInfoPage } = require('../pages/AffiliateInfoPage')
         7. Click on Continue
         8. Confirm Success
 */
-test.describe('@regression TC06_AddAffiliate', () => {
+test.describe.only('@regression TC06_AddAffiliate', () => {
     let account; 
     let affiliate;
 
