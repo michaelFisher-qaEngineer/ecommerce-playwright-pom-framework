@@ -1,15 +1,12 @@
 
 class LoginPage {
-    //constructor
     constructor(page) {
-        //locators
         this.page = page;
         this.loginEmail = page.getByRole('textbox', { name: 'E-Mail Address' });
         this.loginPassword = page.getByRole('textbox', { name: 'Password' });
         this.loginButton = page.getByRole('button', { name: 'Login' });
     }
 
-    //methods
     async enterEmail(str) {
         await this.loginEmail.fill(str);
     }

@@ -14,9 +14,7 @@ for(const data of users) {
         await home.clickMyAccount();
         await home.clickLogin();
 
-        await login.login("michael.fisher.qaengineer@gmail.com", "123321");
-        await console.log(account.getMyAccountLabel());
-        await expect(account.getMyAccountLabel()).toContainText("My Account");
-
+        await login.login(data.username, data.password);
+        await account.verifyMyAccountLabel();
     });
 }

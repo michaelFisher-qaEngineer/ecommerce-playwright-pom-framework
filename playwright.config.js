@@ -15,6 +15,7 @@ const config = ({
   reporter: 'html',
   use: {
       launchOptions: {
+        args: ['--disable-cache']
       // args:['--start-maximized'],
       },
     browserName: 'chromium',
