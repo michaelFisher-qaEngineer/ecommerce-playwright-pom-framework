@@ -18,6 +18,8 @@ const { AffiliateInfoPage } = require('../pages/AffiliateInfoPage')
 test.describe.only('@regression TC06_AddAffiliate', () => {
     let account; 
     let affiliate;
+
+    //all common steps in to the beforeEach:
     test.beforeEach(async({page}) => {
         const home = new HomePage(page);
         const login = new LoginPage(page);
@@ -34,6 +36,7 @@ test.describe.only('@regression TC06_AddAffiliate', () => {
         await affiliate.enterWebsiteInfo('www.foo.com');
     });
 
+    //same verification for each test == goes into the afterEach:
     test.afterEach(async({page}) => {
         await account.verifyAffiliateSuccessMessage();
     });
