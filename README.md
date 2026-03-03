@@ -33,7 +33,7 @@ The project is intended as a **portfolio example of real-world Playwright framew
 
 # Project Structure
 
-
+```
 ecommerce-playwright-pom-framework
 │
 ├── pages
@@ -60,7 +60,7 @@ ecommerce-playwright-pom-framework
 ├── playwright.config.js
 ├── package.json
 └── package-lock.json
-
+```
 
 ---
 
