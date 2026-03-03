@@ -15,7 +15,7 @@ const { AffiliateInfoPage } = require('../pages/AffiliateInfoPage')
         7. Click on Continue
         8. Confirm Success
 */
-test.describe.only('@regression TC06_AddAffiliate', () => {
+test.describe('@regression TC06_AddAffiliate', () => {
     let account; 
     let affiliate;
 

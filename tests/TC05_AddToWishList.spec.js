@@ -25,13 +25,10 @@ test('@regression TC05_AddToWishList', async ({page}) => {
     const laptopsPage = new LaptopsAndNotebooksPage(page);
     const productPage = new ProductPage(page);
     await home.goto();
-    // await page.pause();
     await home.clickMyAccount();
     await home.clickLogin();
 
     await login.login("michael.fisher.qaengineer@gmail.com", "123321");
-    // await home.openLaptopsAndNotebooksMenu();
-    // await home.selectShowAll();
     await home.openShowAllLaptopsAndNotebooks();
     await laptopsPage.addToWishList(1)
     await laptopsPage.verifyAlertText();
